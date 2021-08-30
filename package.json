@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "@volar/experimental": "latest",
-    "vue": "next"
+    "vue": "next",
+    "vue-router": "next"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "latest",
