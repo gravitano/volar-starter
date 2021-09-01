@@ -22,12 +22,23 @@
 
 <preview msg="Hello Volar!"></preview>
 
-<script lang="ts" setup>
-import { ref } from 'vue'
+<script lang="ts">
+/**
+ * hover not working
+ */
 
-defineProps<{ msg: string }>()
+import { defineComponent } from 'vue'
 
-const count = ref(0)
+export default defineComponent({
+  data() {
+    return {
+      count: 0
+    }
+  },
+  mounted() {
+    const result = this.count.split('') // => Property 'split' does not exist on type 'number'
+  }
+})
 </script>
 
 <style scoped>
