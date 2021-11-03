@@ -7,8 +7,12 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@gravitano/vue-auth": "^0.0.10",
     "@volar/experimental": "latest",
-    "vue": "next"
+    "axios": "^0.24.0",
+    "vue": "next",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "latest",
