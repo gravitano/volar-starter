@@ -21,27 +21,66 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <form @submit.prevent="handleSubmit">
-    <div>
-      <label for="username">Username:</label>
+  <form class="space-y-4" @submit.prevent="handleSubmit">
+    <h1 class="text-3xl font-semibold text-gray-900">Login</h1>
+
+    <div class="space-y-1">
+      <label class="block font-semibold" for="username">Username:</label>
       <input
         id="username"
         placeholder="Enter your username"
+        class="
+          border
+          px-4
+          py-2
+          rounded
+          w-full
+          focus:border-indigo-500 focus:ring-indigo-500
+          transition
+          duration-300
+        "
         v-model="form.username"
       />
     </div>
 
-    <div>
-      <label for="password">Password:</label>
+    <div class="space-y-1">
+      <label class="block font-semibold" for="password">Password:</label>
       <input
         id="password"
         placeholder="Enter your username"
+        class="
+          border
+          px-4
+          py-2
+          rounded
+          w-full
+          focus:border-indigo-500 focus:ring-indigo-500
+          transition
+          duration-300
+        "
         v-model="form.password"
         type="password"
       />
     </div>
 
-    <button type="submit">Login</button>
+    <button
+      type="submit"
+      class="
+        block
+        w-full
+        bg-indigo-500
+        hover:bg-indigo-600
+        transition
+        duration-300
+        text-white
+        rounded-lg
+        px-4
+        py-3
+        font-semibold
+      "
+    >
+      Login
+    </button>
   </form>
 </template>
 
