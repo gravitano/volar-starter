@@ -6,11 +6,11 @@ export const authOptions: AuthOptions = {
       url: '/auth/login',
       method: 'post',
     },
-    logout: false,
-    // logout: {
-    //   url: '/auth/logout',
-    //   method: 'delete',
-    // },
+    // logout: false,
+    logout: {
+      url: '/auth/logout',
+      method: 'delete',
+    },
     user: {
       url: '/auth/me',
       method: 'get',
@@ -36,7 +36,7 @@ export const authOptions: AuthOptions = {
   },
   registerAxiosInterceptors: true,
   storage: {
-    driver: 'secureLs', // supported: cookie, local, secureLs (secure local storage)
+    driver: 'cookie', // supported: cookie, local, secureLs (secure local storage)
   },
   refreshToken: {
     enabled: false,
