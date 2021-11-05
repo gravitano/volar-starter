@@ -1,12 +1,7 @@
 <script setup lang="ts">
-import { computed, watch } from "vue";
-import { useStore } from "vuex";
-import { authState, useAuth } from "../auth";
+import { useAuth } from "../auth";
 
-const { user, forceLogout } = useAuth();
-const { loggedIn } = authState();
-
-console.log(user, loggedIn);
+const { user, forceLogout, loggedIn } = useAuth();
 </script>
 
 <template>
