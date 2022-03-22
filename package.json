@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@gravitano/vue-auth": "^0.1.5",
+    "@gravitano/vue-auth": "file:../vue-auth",
     "@volar/experimental": "latest",
     "axios": "^0.24.0",
     "vue": "next",

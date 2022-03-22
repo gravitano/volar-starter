@@ -46,4 +46,7 @@ export const authOptions: AuthOptions = {
     name: 'refresh_token',
     autoLogout: true,
   },
+  cookie: {
+    secure: true,
+  },
 };
